@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Quiz from './components/Quiz';
+import { Question } from './types';
 
-function App() {
+const questions: Question[] = [
+  {
+    question: 'How many inches in a foot?',
+    options: ['12', '13', '10', '15'],
+    answer: '12'
+  },
+  {
+    question: 'Which is not a prime number?',
+    options: ['1', '2', '5', '7'],
+    answer: '1'
+  },
+  // Add more questions as needed
+];
+
+const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Quiz Game</h1>
+      <Quiz questions={questions} />
     </div>
   );
-}
+};
 
 export default App;
