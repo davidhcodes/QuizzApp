@@ -18,8 +18,8 @@ const questions: Question[] = [
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <h1>Quiz Game</h1>
+    <div className="bg-red-900 min-w-full min-h-screen  ">
+      <h1 className='text-white text-7xl text-center p-10'>Quiz Game</h1>
       <Quiz questions={questions} />
     </div>
   );

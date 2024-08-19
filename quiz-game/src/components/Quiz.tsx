@@ -27,7 +27,7 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
   };
 
   return (
-    <div>
+    <div className='bg-pink-900'>
       {showResult ? (
         <Result score={score} total={questions.length} onRetry={handleRetry} />
       ) : (
