@@ -3,8 +3,8 @@ import { QuestionProps } from '../types';
 
 const Question: React.FC<QuestionProps> = ({ question, onAnswer }) => {
   return (
-    <div className='bg-white'>
-      <h2 className='pl-5 text-3xl'>{question.question}</h2>
+    <div className='bg-white p-4'>
+      <h2 className='pl-5 text-3xl text-center'>{question.question}</h2>
       <ul>
         {question.options.map((option, index) => (
           <li className='' key={index}>
