@@ -11,6 +11,8 @@ export interface Question {
   export interface QuestionProps {
     question: Question;
     onAnswer: (answer: string) => void;
+    setButton : (activeButton: number)=> void;
+    activeButton: number
   }
   
   export interface ResultProps {
