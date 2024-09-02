@@ -16,8 +16,8 @@ const Question: React.FC<QuestionProps> = ({ question, onAnswer, setButton, acti
 
   return (
     <div className=' m-4  flex-col md:m-4 md:flex-col'>
-      <h2 className='pl-5 text-4xl pb-10 text-white text-center mb-8 font-semibold md:pl-5 md:text-3xl md:text-black md:text-center  md:font-semibold'>{question.question}</h2>
-      <div className=' items-center justify-center flex  md:bg-white'> 
+      <h2 className='pl-5 text-4xl pb-10 text-white text-center mb-8 font-semibold md:pl-5 md:text-4xl  md:text-center md:text-white  md:font-semibold'>{question.question}</h2>
+      <div className=' items-center justify-center flex  md:flex'> 
 
       <ul className='m-auto grid grid-cols-2 gap-8 h-fit place-items-center md:m-auto md:grid md:grid-cols-2 md:gap-4 md:place-items-center'>
         {question.options.map((option, index) => (
