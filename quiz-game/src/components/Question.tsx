@@ -16,7 +16,7 @@ const Question: React.FC<QuestionProps> = ({ question, onAnswer, setButton, acti
 
   return (
     <div className=' m-4  flex-col md:m-4 md:flex-col'>
-      <div className='bg-red-950  flex fixed items-center right-0 top-0 justify-center text-center  w-40  mr-2  mt-10  h-20 font-bold rounded-full md:bg-red-950  md:flex md:fixed md:items-center md:right-0 md:top-0 md:justify-center md:text-center  md:w-48  md:mr-20  md:mt-10 md:h-32 md:font-bold md:rounded-full'> <h1 className='  text-white text-4xl md:text-white md:text-5xl'>{currentQuestionIndex+1}/{totalQuestionsNumber}</h1></div>
+      <div className='bg-red-950  flex fixed items-center right-0 top-0 justify-center text-center  w-40  mr-2  mt-10  h-20 font-bold rounded-full md:bg-red-950  md:flex md:fixed md:items-center md:right-0 md:top-0 md:justify-center md:text-center  md:w-40  md:mr-6  md:mt-10 md:h-32 md:font-bold md:rounded-full'> <h1 className='  text-white text-4xl md:text-white md:text-5xl'>{currentQuestionIndex+1}/{totalQuestionsNumber}</h1></div>
       <h2 className='pl-5 text-4xl pb-10 text-white text-center mb-8 font-semibold md:pl-5 md:text-4xl  md:text-center md:text-white  md:font-semibold'>{question.question}</h2>
       <div className=' items-center justify-center flex  md:flex'> 
       <ul className='m-auto grid grid-cols-2 gap-8 h-fit place-items-center md:m-auto md:grid md:grid-cols-2 md:gap-4 md:place-items-center'>
