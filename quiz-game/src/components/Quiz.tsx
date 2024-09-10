@@ -41,7 +41,7 @@ const Quiz: React.FC<QuizProps> = ({ questions }) => {
       {showResult ? (
         <Result score={score} total={questions.length} onRetry={handleRetry} />
       ) : (
-        <Question question={questions[currentQuestionIndex]} onAnswer={handleAnswer} setButton={setActiveButton} activeButton={activeButton}/>
+        <Question question={questions[currentQuestionIndex]} onAnswer={handleAnswer} setButton={setActiveButton} activeButton={activeButton} currentQuestionIndex={currentQuestionIndex} totalQuestionsNumber={questions.length}/>
       )}
     </div>
   );

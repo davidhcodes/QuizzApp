@@ -13,6 +13,8 @@ export interface Question {
     onAnswer: (answer: string) => void;
     setButton : (activeButton: number)=> void;
     activeButton: number
+    currentQuestionIndex: number
+    totalQuestionsNumber: number
   }
   
   export interface ResultProps {
